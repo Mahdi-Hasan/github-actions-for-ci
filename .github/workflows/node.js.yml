@@ -36,7 +36,7 @@ jobs:
             node-version: ${{ matrix.node-version }}
         - uses: actions/download-artifact@main
           with:
-            name: webpack artifacts
+            name: webpackArtifacts
             path: public
         - name: npm install, and test
           run:  |
